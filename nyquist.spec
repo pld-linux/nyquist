@@ -7,6 +7,7 @@ License:	BSD
 # but "Please do not distribute modified versions of Nyquist without permission."
 Group:		Libraries
 Source0:	http://www-2.cs.cmu.edu/~music/nyquist/nyquist229.zip
+# Source0-md5:	5afea86c994bbd4597397c6ecdc40872
 URL:		http://www-2.cs.cmu.edu/~music/nyquist/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
