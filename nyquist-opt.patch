@@ -1,0 +1,27 @@
+--- nyquist/Makefile.orig	2002-11-21 18:07:42.000000000 +0100
++++ nyquist/Makefile	2003-05-23 22:33:16.000000000 +0200
+@@ -18,7 +18,7 @@
+ 
+ CC = gcc
+ # to disable command line editing, take out -DREADLINE
+-CFLAGS = -DREADLINE -DCMTSTUFF -O2 $(INCL)
++CFLAGS = -DREADLINE -DCMTSTUFF $(OPTFLAGS) $(INCL)
+ LN = $(CC)
+ # to disable command line editing, take out -lreadline -lcurses
+ LFLAGS = -lm -lreadline -lcurses
+--- nyquist/misc/Makefile.orig	2002-11-21 14:15:16.000000000 +0100
++++ nyquist/misc/Makefile	2003-05-23 22:34:04.000000000 +0200
+@@ -5,11 +5,11 @@
+ # DESC: This file builds various utilities for Nyquist
+ #
+ 
+-CC = gcc $(CFLAGS)
++CC = gcc
+ 
+ # the unix path gets us switches.h:
+ # the cmt path gets us swlogic.h:
+-CFLAGS = -g -I../sys/unix -I../cmt
++CFLAGS = $(OPTFLAGS) -I../sys/unix -I../cmt
+ 
+ # Directory info:
+ BINPATH = .

@@ -1,0 +1,10 @@
+--- nyquist/sys/unix/osstuff.c.orig	2002-11-21 14:15:16.000000000 +0100
++++ nyquist/sys/unix/osstuff.c	2003-05-23 22:28:44.000000000 +0200
+@@ -18,6 +18,7 @@
+  *	advertised.
+  */
+ 
++#include <errno.h>
+ #include <stdio.h>
+ #include <string.h>
+ #include "switches.h"
