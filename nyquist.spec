@@ -1,15 +1,14 @@
 Summary:	Nyquist - a language for composition and sound synthesis
 Summary(pl):	Nyquist - jêzyk do komponowania i syntezy d¼wiêku
 Name:		nyquist
-Version:	2.29
-Release:	0.1
+Version:	2.31
+Release:	1
 License:	BSD
 # but "Please do not distribute modified versions of Nyquist without permission."
 Group:		Applications/Sound
-# Source0-md5:	5afea86c994bbd4597397c6ecdc40872
-Source0:	http://www-2.cs.cmu.edu/~music/nyquist/nyquist229.zip
-Patch0:		%{name}-errno.patch
-Patch1:		%{name}-opt.patch
+Source0:	http://www-2.cs.cmu.edu/~music/nyquist/nyqsrc231.zip
+# Source0-md5:	49ff7053ce76b11f61685f22fd068928
+Patch0:		%{name}-opt.patch
 URL:		http://www-2.cs.cmu.edu/~music/nyquist/
 BuildRequires:	readline-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -44,8 +43,8 @@ proste wyra¿enia w bardziej z³o¿one, aby utworzyæ ca³± kompozycjê.
 
 %prep
 %setup -q -n %{name}
+ln -s sys/unix/linux/Makefile Makefile
 %patch0 -p1
-%patch1 -p1
 
 %build
 %{__make} \
