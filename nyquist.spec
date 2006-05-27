@@ -10,6 +10,7 @@ Source0:	http://www-2.cs.cmu.edu/~music/nyquist/nyqsrc231.zip
 # Source0-md5:	49ff7053ce76b11f61685f22fd068928
 Patch0:		%{name}-opt.patch
 URL:		http://www-2.cs.cmu.edu/~music/nyquist/
+BuildRequires:	libstdc++-devel
 BuildRequires:	readline-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -43,11 +44,12 @@ proste wyra¿enia w bardziej z³o¿one, aby utworzyæ ca³± kompozycjê.
 
 %prep
 %setup -q -n %{name}
-ln -s sys/unix/linux/Makefile Makefile
 %patch0 -p1
+ln -s sys/unix/linux/Makefile Makefile
 
 %build
 %{__make} \
+	CC="%{__cc}" \
 	OPTFLAGS="%{rpmcflags}"
 
 %install
