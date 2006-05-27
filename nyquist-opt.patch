@@ -1,5 +1,5 @@
---- nyquist/sys/unix/linux/Makefile.orig	2004-11-10 11:07:00.000000000 +0100
-+++ nyquist/sys/unix/linux/Makefile	2006-05-24 13:32:23.000000000 +0200
+--- nyquist/misc/Makefile.orig	2005-12-22 10:48:00.000000000 +0100
++++ nyquist/misc/Makefile	2006-05-24 13:31:23.000000000 +0200
 @@ -5,11 +5,11 @@
  # DESC: This file builds various utilities for Nyquist
  #
@@ -14,8 +14,8 @@
  
  # Directory info:
  BINPATH = .
---- nyquist/misc/Makefile.orig	2005-12-22 10:48:00.000000000 +0100
-+++ nyquist/misc/Makefile	2006-05-24 13:31:23.000000000 +0200
+--- nyquist/sys/unix/linux/Makefile.orig	2004-11-10 11:07:00.000000000 +0100
++++ nyquist/sys/unix/linux/Makefile	2006-05-24 13:32:23.000000000 +0200
 @@ -41,7 +41,8 @@
  # to enable command line editing, use -DREADLINE. WARNING: THIS WILL DISABLE THE
  # ABILITY TO INTERRUPT LISP AND USE SOME OTHER HANDY CONTROL CHARACTERS
