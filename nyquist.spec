@@ -1,5 +1,5 @@
 Summary:	Nyquist - a language for composition and sound synthesis
-Summary(pl):	Nyquist - jêzyk do komponowania i syntezy d¼wiêku
+Summary(pl.UTF-8):   Nyquist - jÄ™zyk do komponowania i syntezy dÅºwiÄ™ku
 Name:		nyquist
 Version:	2.31
 Release:	1
@@ -28,19 +28,19 @@ Csound). You can call upon these instruments and generate a sound just
 by typing a simple expression. You can combine simple expressions into
 complex ones to create a whole composition.
 
-%description -l pl
-Nyquist to jêzyk do syntezy d¼wiêku i komponowania muzyki. W
-przeciwieñstwie do jêzyków zapisu d±¿±cych tylko do obs³ugi zdarzeñ
-oraz jêzyków przetwarzania d±¿±cych tylko do obs³ugi sygna³ów i
-syntezy, Nyquist obs³uguje oba zagadnienia w jednym, zintegrowanym
-systemie. Nyquist jest tak¿e elastyczny i ³atwy w u¿yciu, poniewa¿
+%description -l pl.UTF-8
+Nyquist to jÄ™zyk do syntezy dÅºwiÄ™ku i komponowania muzyki. W
+przeciwieÅ„stwie do jÄ™zykÃ³w zapisu dÄ…Å¼Ä…cych tylko do obsÅ‚ugi zdarzeÅ„
+oraz jÄ™zykÃ³w przetwarzania dÄ…Å¼Ä…cych tylko do obsÅ‚ugi sygnaÅ‚Ã³w i
+syntezy, Nyquist obsÅ‚uguje oba zagadnienia w jednym, zintegrowanym
+systemie. Nyquist jest takÅ¼e elastyczny i Å‚atwy w uÅ¼yciu, poniewaÅ¼
 jest oparty na interaktywnym interpreterze Lispu.
 
-Przy u¿yciu Nyquista mo¿na projektowaæ instrumenty poprzez ³±czenie
-funkcji (podobnie jak robi siê to w jêzykach orkiestrowych Music V,
-cmusic lub Csound). Mo¿na odwo³ywaæ siê do tych instrumentów i
-generowaæ d¼wiêki poprzez wpisywanie prostych wyra¿eñ. Mo¿na ³±czyæ
-proste wyra¿enia w bardziej z³o¿one, aby utworzyæ ca³± kompozycjê.
+Przy uÅ¼yciu Nyquista moÅ¼na projektowaÄ‡ instrumenty poprzez Å‚Ä…czenie
+funkcji (podobnie jak robi siÄ™ to w jÄ™zykach orkiestrowych Music V,
+cmusic lub Csound). MoÅ¼na odwoÅ‚ywaÄ‡ siÄ™ do tych instrumentÃ³w i
+generowaÄ‡ dÅºwiÄ™ki poprzez wpisywanie prostych wyraÅ¼eÅ„. MoÅ¼na Å‚Ä…czyÄ‡
+proste wyraÅ¼enia w bardziej zÅ‚oÅ¼one, aby utworzyÄ‡ caÅ‚Ä… kompozycjÄ™.
 
 %prep
 %setup -q -n %{name}
