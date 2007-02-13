@@ -1,5 +1,5 @@
 Summary:	Nyquist - a language for composition and sound synthesis
-Summary(pl.UTF-8):   Nyquist - język do komponowania i syntezy dźwięku
+Summary(pl.UTF-8):	Nyquist - język do komponowania i syntezy dźwięku
 Name:		nyquist
 Version:	2.31
 Release:	1
