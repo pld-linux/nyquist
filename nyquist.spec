@@ -12,6 +12,7 @@ Patch0:		%{name}-opt.patch
 URL:		http://www-2.cs.cmu.edu/~music/nyquist/
 BuildRequires:	libstdc++-devel
 BuildRequires:	readline-devel
+BuildRequires:	unzip
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
